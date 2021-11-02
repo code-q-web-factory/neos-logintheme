@@ -83,9 +83,6 @@ body {
     .neos-controls input::-webkit-input-placeholder {
       color: #7bbd8f !important; }
 
-/* line 114, /Users/rolandschuetz/Documents/Projects/TheGuesthouseVienna/Packages/Application/CodeQ.LoginTheme/Resources/Public/scss/_layout.scss */
-.neos-actions {
-  height: 0px !important; }
   /* line 117, /Users/rolandschuetz/Documents/Projects/TheGuesthouseVienna/Packages/Application/CodeQ.LoginTheme/Resources/Public/scss/_layout.scss */
   .neos-actions button.neos-login-btn {
     background: #7bbd8f !important;
