@@ -26,10 +26,10 @@ body {
 }
 
 .neos-login-box {
-	width: 310px !important;
+	width: min(420px, calc(100vw - 48px)) !important;
 	box-sizing: border-box !important;
 	background: white !important;
-	padding: 28px !important;
+	padding: 32px !important;
 
 	&:before,
 	&:after {	/* remove blur effect */
@@ -133,7 +133,81 @@ body {
 	}
 }
 
+.neos-login-body.neos-two-factor__login {
+	.neos-two-factor__method-picker {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 18px !important;
+		margin-top: 18px !important;
+	}
+
+	.neos-two-factor__method-picker__row {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 7px !important;
+	}
+
+	.neos-two-factor__method-picker__row .neos-button {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 38px !important;
+		box-sizing: border-box !important;
+		padding: 10px 14px !important;
+		background: #7bbd8f !important;
+		color: black !important;
+		font-family: 'QBackslash' !important;
+		font-size: 12px !important;
+		font-weight: bold !important;
+		letter-spacing: 1px !important;
+		line-height: 1.25 !important;
+		text-transform: uppercase !important;
+		white-space: normal !important;
+		overflow: visible !important;
+		text-overflow: clip !important;
+	}
+
+	.neos-two-factor__method-picker__row .neos-button:hover,
+	.neos-two-factor__method-picker__row .neos-button:focus {
+		background: #4fa068 !important;
+		color: black !important;
+	}
+
+	.neos-two-factor__method-picker__description {
+		color: #222 !important;
+		font-family: Cambria, Georgia, serif !important;
+		font-size: 14px !important;
+		font-style: italic !important;
+		line-height: 1.35 !important;
+	}
+
+	.neos-two-factor__cancel-login {
+		margin-top: 18px !important;
+		padding-top: 16px !important;
+		border-top: 1px solid rgba(0, 0, 0, .16) !important;
+	}
+
+	button.neos-two-factor__cancel-login__button {
+		margin-top: 0 !important;
+		color: #222 !important;
+		font-family: 'QBackslash' !important;
+		font-size: 11px !important;
+		font-weight: bold !important;
+		letter-spacing: 1px !important;
+		line-height: 1.3 !important;
+		text-transform: uppercase !important;
+		white-space: normal !important;
+	}
+}
+
 .neos-login-footer {
+	width: calc(100% - 48px) !important;
+	max-width: 760px !important;
+	box-sizing: border-box !important;
+	padding: 10px 14px !important;
+	margin: 0 auto 18px !important;
+	background: rgba(255, 255, 255, .88) !important;
+	border-radius: 2px !important;
+
 	@media (min-width: 1080px) {
 		width: 45% !important;
 	}
@@ -142,7 +216,17 @@ body {
 			color: black !important;
 			text-shadow: none !important;
 			font-size: 10px !important;
-			line-height: 10px !important;
+			line-height: 1.3 !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.neos-login-box {
+		padding: 28px !important;
+	}
+
+	.neos-login-box-logo {
+		margin-bottom: 28px !important;
 	}
 }
 
