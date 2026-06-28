@@ -99,6 +99,16 @@ body {
     /* line 130, /Users/rolandschuetz/Documents/Projects/TheGuesthouseVienna/Packages/Application/CodeQ.LoginTheme/Resources/Public/scss/_layout.scss */
     .neos-actions button.neos-login-btn:hover {
       background: #4fa068 !important; }
+  .neos-actions .neos-tooltip {
+    left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important; }
+    .neos-actions .neos-tooltip.neos-bottom {
+      margin-left: 0 !important; }
+    .neos-actions .neos-tooltip .neos-tooltip-inner {
+      width: 100% !important;
+      max-width: none !important;
+      box-sizing: border-box !important; }
 
 .neos-login-body.neos-two-factor__login .neos-two-factor__method-picker {
   display: flex !important;

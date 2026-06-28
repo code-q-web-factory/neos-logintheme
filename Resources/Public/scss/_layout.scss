@@ -131,6 +131,22 @@ body {
 			background: #4fa068 !important;
 		}
 	}
+
+	.neos-tooltip {
+		left: 0 !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+
+		&.neos-bottom {
+			margin-left: 0 !important;
+		}
+
+		.neos-tooltip-inner {
+			width: 100% !important;
+			max-width: none !important;
+			box-sizing: border-box !important;
+		}
+	}
 }
 
 .neos-login-body.neos-two-factor__login {
